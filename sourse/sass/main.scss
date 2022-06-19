@@ -111,8 +111,19 @@ $output-bourbon-deprecation-warnings: false;
 @import '../pug/blocks/modal/_modal.scss';
 @import '../pug/blocks/headerBlock/_headerBlock.scss';
 
+
+@import '../pug/blocks/sTargets/_sTargets.scss';
+@import '../pug/blocks/sAdv/_sAdv.scss';
+@import '../pug/blocks/sServises/_sServises.scss';
+@import '../pug/blocks/sLogos/_sLogos.scss';
+@import '../pug/blocks/sTeams/_sTeams.scss';
+@import '../pug/blocks/sMembers/_sMembers.scss';
+@import '../pug/blocks/sPartners/_sPartners.scss';
+
 @import '../pug/blocks/header/_header.scss';
 @import '../pug/blocks/footer/_footer.scss';
+
+
 
 @import "media"; // Всегда в конце
 

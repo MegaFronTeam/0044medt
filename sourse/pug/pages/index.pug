@@ -11,40 +11,33 @@ include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/footer/_footer.pug
+include ../blocks/sTargets/_sTargets.pug
+include ../blocks/sAdv/_sAdv.pug
+include ../blocks/sServises/_sServises.pug
+include ../blocks/sLogos/_sLogos.pug
+include ../blocks/sTeams/_sTeams.pug
+include ../blocks/sMembers/_sMembers.pug
+include ../blocks/sPartners/_sPartners.pug
 
 block variables
 	- let  mainPage= 'main-page' 
 	- let  bg= null
 
 block title
-	- let  title= index.head.title
+	- let  title= 'Главная'
 	title= title
 block pagecontent
-	//- +mob-mnu()
-	
-	
-	+header()
 	+top-nav()
-	+topLine
-	.container
-		+in-c('radio', 'sdasdasdasd')
-		+in-c('radio', 'sdasdasdasd')
-	form
-		+input('fsdfs','tel')(required)
-		button  btn
 	+headerBlock
 
-	+soc()
+	+sTargets
+	+sAdv
+	+sServises
+	+sLogos
+	+sTeams
+	+sMembers
+	+sPartners
 	+sForm()
-	//- +sForm()
-	//- - let list = items[0].title
-	//- p= list
-	.container
-		each item in items
-			li 
-				h2= item.title
-				p= item.text
-	//- +sContact()
 	
 	+footer()
       

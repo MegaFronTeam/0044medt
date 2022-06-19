@@ -1,0 +1,37 @@
+// start .sMembers
+.sMembers {
+	--sPT: #{rem(40)};
+	--sPB: #{rem(40)};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem(50)};
+		--bs-gutter-y: #{rem(70)};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	&__img-wrap{
+		line-height: 95px;
+		vertical-align: middle;
+		height: 95px;
+		margin-bottom: rem(20);
+	}
+	p{
+		max-width: rem(280);
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sMembers

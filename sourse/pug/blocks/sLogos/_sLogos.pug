@@ -1,0 +1,11 @@
+mixin sLogos(data)
+	// start sLogos
+	+b.sLogos.section#sLogos&attributes(attributes)
+		.container
+			+e.slider--js.swiper
+				.swiper-wrapper
+					// сделайте ограничение высоты картинки по текущей - 140, в битриксе это же просто сделать
+					- for (var x = 0; x < 10; x++)
+						+e.slide.swiper-slide
+							+img("img/logo-slide.png")
+	// end sLogos

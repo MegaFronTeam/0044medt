@@ -7,23 +7,40 @@
 <div class="top-nav block-with-lazy">
 	<div class="container">
 		<div class="row">
-			<div class="col order-lg-0 order-last">
+			<div class="col-xl-auto col">
+				<a class="top-nav__logo z-10" href="/"><img src="img/logo.png" alt=""/>
+				</a>
+			</div>
+			<div class="col-xl col-12 order-xl-0 order-last">
 				<div class="menu-mobile menu-mobile--js">
 					<div class="menu-mobile__inner">
-						<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+						<div class="toggle-menu-mobile toggle-menu-mobile--js d-xl-none"><span></span>
 						</div>
-						<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
-						</ul>
+						<div class="row">
+							<div class="col-xl">
+								<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О консорциуме</a></li>
+									<li class="menu-item" itemprop="item"><a class="active" href="#" itemprop="url">Деятельность</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Рабочие группы</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="col-xl-auto"><a class="top-nav__btn btn btn-danger" href="#">Написать нам</a></div>
+							<div class="col-xl-auto"><a class="top-nav__btn btn btn-outline-primary" href="#">Услуги центра </a></div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-auto d-lg-none">
-				<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+			<div class="col-auto">
+				<a class="top-nav__btn top-nav__btn--cabinet btn btn-primary" href="#"> 
+					<svg class="icon icon-user ">
+						<use xlink:href="img/svg/sprite.svg#user"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="col-auto d-xl-none">
+				<div class="toggle-menu-mobile toggle-menu-mobile--js d-xl-none"><span></span>
 				</div>
 			</div>
 		</div>

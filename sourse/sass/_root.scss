@@ -5,14 +5,14 @@
 
 	@include media-breakpoint-up(md) {
 
-		--sPT: #{rem(80)};
+		--sPT: #{rem(90)};
 		--sPB: #{rem(90)};
-		--sTPB: #{rem(40)};
+		--sTPB: #{rem(62)};
 	}
 
-	--sPT: #{rem(80 * .5)};
-	--sPB: #{rem(90 * .5)};
-	--sTPB: #{rem(40 * .5)};
+	--sPT: #{rem(90 * .6)};
+	--sPB: #{rem(90 * .6)};
+	--sTPB: #{rem(62 * .6)};
 
 
 		--swiperArrowSize: #{rem(68)};
@@ -27,6 +27,11 @@
 
 
 	--fancybox-bg: rgba(24, 24, 27, .77);
+	@include media-breakpoint-up(xl) {
+		--top-line-top: #{rem(50)};
+	}
+	--top-line-top: #{rem(20)};
+	--y-bottom: #{rem(50)};
 
 
 
