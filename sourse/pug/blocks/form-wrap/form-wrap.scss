@@ -33,7 +33,7 @@
 	 left: $input-padding-x;
 	 top: var(--sp-y); 
 	 font-size: var(--fz);
-	 color: rgba(#fff,  .5); 
+	 color: $input-placeholder-color; 
 	 transform-origin: left ;
 	 pointer-events: none;
 	 font-weight: $input-font-weight;
@@ -56,7 +56,7 @@
 	 &.form-select  {
 		 & ~ .form-wrap__input-title{
 			//  color: #846951;
-			 transform: scale(.8) translateY(-120%) ; 
+			 transform: scale(.72) translateY(-80%) ; 
 		 }
 	 }
  }
