@@ -36,3 +36,16 @@ mixin upt(t, bg, color, size)
 				+e.text= t
 			.col
 				+e.line
+
+mixin btn-file()
+	+b.btn-file.row
+		mixin item(t, s)
+			+e.col.col-sm-auto
+				+e.file(href="#" download)
+					img(src="img/svg/docs.svg" loading="lazy", alt="")
+					div
+						+e.title= t
+						+e.text= s
+		+item(`Презентация`,`PDF 2 mb`)
+		+item(`Манифест`,`PDF 3 mb`)
+		+item(`Заявление о включении`,`DOCx 1.6 mb`)

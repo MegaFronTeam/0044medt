@@ -3,8 +3,11 @@ mixin sPartners(data)
 	+b.SECTION.sPartners.section#sPartners&attributes(attributes)
 		.container
 			+b.section-title
-				+upt('Анонсы')
-				h2 Новости и мероприятия
+				+upt('Наши друзья')
+				h2 Партнеры
 				
-			.row
+			+e.row.row
+				- for (var x = 1; x < 9; x++)
+					+e.col.col-lg-3.col-sm-4.col-6
+						+img(`img/sPartners-${x}.png`)
 	// end sPartners

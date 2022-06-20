@@ -1,9 +1,48 @@
+mixin articalitem(i,t)
+	+b.artical-item
+		.row
+			.col-md-auto
+				+e.img-wrap(href="#").bg-wrap
+					+img(`img/artical-${i}.jpg`,'bg').picture-bg
+			.col
+				.row.g-2.small.mb-md-4
+					.col-auto.text-secondary 29.04.2022
+					.col-auto Новости Консорциума
+				.h4
+					a(href="#") Консорциум «Медицинская техника» принял участие в международном конгрессе «Оргздрав-2022»
+
 mixin sArticals(data)
 	// start sArticals
 	+b.SECTION.sArticals.section#sArticals&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sArticals
-				
-			.row
+			+b.section-title
+				+upt('Анонсы')
+				h2 Новости и мероприятия
+				+b.filter-block
+					label
+						input.btn-check(type="checkbox", name="")
+						span.btn.btn-outline-primary Все
+					label
+						input.btn-check(type="checkbox", name="")
+						span.btn.btn-outline-primary Новости Консорциума
+					label
+						input.btn-check(type="checkbox", name="")
+						span.btn.btn-outline-primary Новости наших участников
+					label
+						input.btn-check(type="checkbox", name="")
+						span.btn.btn-outline-primary Новости отрасли
+					label
+						input.btn-check(type="checkbox", name="")
+						span.btn.btn-outline-primary Мероприятия
+					label
+						input.btn-check(type="checkbox", name="")
+						span.btn.btn-outline-primary Презентация Консорциума
+			+articalitem(`1`,`Консорциум «Медицинская техника» принял участие в международном конгрессе «Оргздрав-2022»`)
+			+articalitem(`2`,`«Консорциум» Медицинская техника» и Сеченовский Университет подписали соглашение  о сотрудничестве`)
+			+articalitem(`3`,`Развитие отрасли медицинской промышленности обсудили на конференции в Москве`) 
+			+e.btn-wrap.row
+				.col-auto
+					button.btn.btn-outline-primary Показать еще
+				.col-auto
+					a.btn.btn-danger(href="#") Все новости
 	// end sArticals

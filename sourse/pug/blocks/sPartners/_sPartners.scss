@@ -5,14 +5,30 @@
 	// --sTPB: #{rem()};
 	&__row{
 		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem()};
+		justify-content: center;
+		@include media-breakpoint-up(lg) {
+			--bs-gutter-y: #{rem(180)};
+			
+		}
+		--bs-gutter-y: #{rem(80)};
+		text-align: center;
+		align-items: center;
 
 	}
 	.section-title{
 		
 	}
+	img{
+		@extend .res-i;
+		
+	}
 	&__col{
-
+		@include mt;
+		filter: saturate(0);
+		display: block;
+		&:hover{
+			filter: saturate(1);
+		}
 	}
 	&__item{
 

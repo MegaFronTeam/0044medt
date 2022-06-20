@@ -2,11 +2,19 @@ mixin sForm()
 	// start sForm
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sForm
-				h2 sForm
-				h2 sForm
-				h2 sForm
-				
-			.row
+			+e.inner
+				+e.row.row
+					.col-xl-4.col
+						h3 Будьте в&nbsp;курсе последних  событий в&nbsp;отрасли
+						p Подпишитесь на&nbsp;рассылку новостей
+					.col-xl.col-auto.text-center
+						+img("img/svg/mail.svg").res-i
+					.col-xl-5.col-12
+						+form-wrap
+							.row
+								.col
+									+input("Ваш e-mail",'email')
+								.col-sm-auto
+									button.btn.btn-danger.w-100 Подписаться
+							+policy
 	// end sForm

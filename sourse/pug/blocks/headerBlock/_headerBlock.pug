@@ -6,16 +6,6 @@ mixin headerBlock()
 			+b.section-title
 				h1 Научное-технологическое развитие  отечественной медицинской промышленности
 				p Миссия Консорциума&nbsp;&mdash; объединение российских производителей для выработки консолидированных инициатив по&nbsp;развитию производства медицинских изделий в&nbsp;Российской Федерации
-			.row
-				mixin item(t, s)
-					+e.col.col-sm-auto
-						+e.file(href="#" download)
-							img(src="img/svg/docs.svg" loading="lazy", alt="")
-							div
-								+e.title= t
-								+e.text= s
-				+item(`Презентация`,`PDF 2 mb`)
-				+item(`Манифест`,`PDF 3 mb`)
-				+item(`Заявление о включении`,`DOCx 1.6 mb`)
+			+btn-file
 						
 	// end headerBlock

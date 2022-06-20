@@ -2,8 +2,21 @@ mixin footer()
 	+b.FOOTER.footer
 		.container
 			.row
-				.col
-					
-				.col Footer
-				.col
-				.col-auto
+				+e.col.col-xxl-3.col-lg-auto
+					+e.logo(href="/").z-10
+						img(src="img/logo-white.png", alt="") 
+				+e.col.col-xl-3.col-md-auto.col
+					+mnu()
+				+e.col.col-xl-3.col-md-auto.col
+					+btn-file()
+				+e.col--aside.col-md.text-md-end
+					p
+						a.btn.btn-danger(href="#") Написать нам
+					p 129366, г. Москва, проспект Мира, д.176 
+					p E-mail: #[a(href="mailto:info@anokmt.ru") info@anokmt.ru]
+			+e.down
+				.row
+					.col © 2022 АНО "Консорциум "Медицинская техника"
+
+					.col-sm-auto
+						a(href="#") Политика конфиденциальности 

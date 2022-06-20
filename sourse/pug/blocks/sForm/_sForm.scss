@@ -2,6 +2,43 @@
 	// start .sForm
 	.sForm {
 		 
+		&__inner{
+			border: 1px solid #D7D8E0;
+			border-radius: 8px;
+			position: relative;z-index: 2;
+			@include media-breakpoint-up(md) {
+				padding: 36px 47px;
+			}
+			padding: 26px 20px;
+		}
+		&__row{
+			align-items: center;
+			--bs-gutter-y: 30px;
+			
+		}
+		.form-wrap{
+			.row{
+			}
+			.row{
+				--bs-gutter-x: 15px;
+				--bs-gutter-y: 10px;
+				margin-bottom: 14px;
+			}
+			.btn{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+		h3{
+			color: $primary;
+			@include media-breakpoint-up(sm) {
+				margin-right: -50px;
+			}
+		}
+		p{
+			color: #B5B5B5;
+
+		}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -23,7 +60,16 @@
 	@include media-breakpoint-down(xl) {}
 	@include media-breakpoint-down(lg) {}
 	@include media-breakpoint-down(md) {}
-	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(sm) {
+		img{
+			position: absolute;
+			opacity: 0.1;
+			right: 20px;
+			top: 20px;
+			max-width: none;
+			z-index: -1;
+		}
+	}
 	@include media-breakpoint-down(xs) {} 
 
 } // end.sForm
