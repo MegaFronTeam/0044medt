@@ -49,3 +49,9 @@ mixin btn-file()
 		+item(`Презентация`,`PDF 2 mb`)
 		+item(`Манифест`,`PDF 3 mb`)
 		+item(`Заявление о включении`,`DOCx 1.6 mb`)
+
+mixin pageHead(t)
+	+b.page-head&attributes(attributes)
+		.container
+			+breadcrumb('Главная','О консорциуме','Руководство Консорциума')
+			h1= t
