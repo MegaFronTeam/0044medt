@@ -1,32 +1,26 @@
- 
-	  
-.soc{
+.soc {
 	@include roww(10px, m);
 	display: flex;
-	&__item{
-		text-decoration: none !important; 
+	&__item {
+		text-decoration: none !important;
 		vertical-align: middle;
 		@include mt;
 		display: grid;
 		place-items: center;
-		&:hover{
-		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
+		&:hover {
+			// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
 			// opacity: .6 ;
 		}
-		
 	}
-	.icon{
+	.icon {
 		font-size: rem(30);
 	}
-
-
 }
 
-
-.counter{
+.counter {
 	counter-reset: num;
 	&__item {
-		position: relative; 
+		position: relative;
 		&::before {
 			content: counter(num);
 			counter-increment: num;
@@ -34,23 +28,20 @@
 	}
 }
 
-
-
-
-.addBlock{
+.addBlock {
 	color: var(--color, #{$primary});
 	border: 1px solid;
 	border-radius: 23px;
 	display: flex;
 	position: relative;
 	overflow: hidden;
-	input{
+	input {
 		color: inherit;
 		text-align: center;
 		border: none;
 		height: rem(45);
 	}
-	&__btn{
+	&__btn {
 		color: inherit;
 		height: rem(45);
 		position: relative;
@@ -64,16 +55,85 @@
 		// padding-right: rem(8);
 		width: rem(26);
 		&::before,
-		&::after{
-			content: '';
+		&::after {
+			content: "";
 			width: 10px;
-			height: 2px; 
+			height: 2px;
 			background-color: currentColor;
 			@include a-cent;
 			position: absolute;
 		}
-		&--plus::after{
+		&--plus::after {
 			transform: rotate(90deg);
+		}
+	}
+}
+
+.breadcrumb-item {
+	width: auto;
+	font-weight: 500;
+	font-size: rem(13);
+	line-height: calc(18 / 13);
+}
+
+.page-head {
+	@include media-breakpoint-up(lg) {
+		padding-top: rem(36);
+		padding-bottom: rem(50);
+	}
+	padding-top: rem(18);
+	padding-bottom: rem(24);
+	h1 {
+		color: $blue;
+		margin-bottom: 0;
+	}
+}
+.breadcrumb.swiper-wrapper {
+	flex-wrap: nowrap;
+}
+
+.main-menu {
+	@include media-breakpoint-down(lg) {
+		padding-bottom: rem(8);
+		border-bottom: 1px solid #d7d8e0;
+	}
+	@include media-breakpoint-up(lg) {
+		padding-right: rem(8);
+		height: 100%;
+		border-right: 1px solid #d7d8e0;
+		position: sticky;
+	}
+	ul {
+		list-style-type: none;
+		margin-bottom: 0;
+	}
+	.swiper-wrapper {
+		@include media-breakpoint-up(lg) {
+			flex-direction: column;
+		}
+	}
+	.swiper-slide {
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(14);
+			height: auto;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		@include media-breakpoint-down(lg) {
+			width: auto;
+			margin-right: rem(16);
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&__item {
+		font-weight: 600;
+		font-size: rem(16);
+		line-height: 150%;
+		&.active {
+			color: #676767;
 		}
 	}
 }

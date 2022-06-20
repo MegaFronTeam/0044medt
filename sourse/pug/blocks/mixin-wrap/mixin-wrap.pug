@@ -55,3 +55,15 @@ mixin pageHead(t)
 		.container
 			+breadcrumb('Главная','О консорциуме','Руководство Консорциума')
 			h1= t
+
+
+mixin main-menu(active,...items)
+	+b.main-menu--js.swiper
+		ul.swiper-wrapper
+			each item, index in items
+				if (index+1 == active)
+					li.swiper-slide
+						+e.item.active(href="#")!=item
+				else
+					li.swiper-slide
+						+e.item(href="#")!=item
