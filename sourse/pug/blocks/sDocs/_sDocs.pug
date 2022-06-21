@@ -1,0 +1,21 @@
+mixin sDocs(data)
+	// start sDocs
+	+b.SECTION.sDocs.section#sDocs&attributes(attributes)
+		+b.section-title
+			h2 Документы на вступление
+		h4 Объединение российских производителей для выработки консолидированных инициатив по развитию производства медицинских изделий в Российской Федерации
+		+doc-item(`Длинное название файла для примера отображения длинного названия инное название файла для примера отображения длинного названия файлаайла`)
+		+doc-item(`Длинное название файла для примера отображения длинного названия инное название файла для `)
+		+doc-item(`Длинное название файла для примера отображения `)
+	// end sDocs
+
+mixin doc-item(title)
+	+b.doc-item(href="#")
+		+e.info
+			+e.pic
+				img(src="img/svg/doc-pic.svg", alt="")
+			+e.text
+				+e.title!=title
+				+e.type PDF 2 mb
+		+e.download
+			+icon('download')
