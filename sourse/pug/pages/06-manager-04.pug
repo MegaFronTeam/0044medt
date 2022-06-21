@@ -6,6 +6,7 @@ include ../blocks/top-nav/_top-nav.pug
 include ../blocks/headerBlock/_headerBlock.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sContent/_sContent.pug
+include ../blocks/sManager/_sManager.pug
  
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
@@ -21,12 +22,9 @@ block title
 	title= title
 block pagecontent
 	+top-nav()
-	+pageHead(title,'Главная','О консорциуме','Руководство Консорциума')
+	+pageHeadBack('Главная','О консорциуме','Руководство Консорциума')
 	.mainblock.container
-		.row.row-main
-			.col-lg-3.col-aside
-				+main-menu('1',`Цели и задачи`,`Руководство Консорциума`,`План работы`)
-			.col-lg-9.col-main col-main
+		+sManager4
 	+sForm()
 	
 	+footer()

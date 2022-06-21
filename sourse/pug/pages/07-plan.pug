@@ -6,6 +6,7 @@ include ../blocks/top-nav/_top-nav.pug
 include ../blocks/headerBlock/_headerBlock.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sContent/_sContent.pug
+include ../blocks/sPlan/_sPlan.pug
  
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
@@ -25,8 +26,9 @@ block pagecontent
 	.mainblock.container
 		.row.row-main
 			.col-lg-3.col-aside
-				+main-menu('1',`Цели и задачи`,`Руководство Консорциума`,`План работы`)
-			.col-lg-9.col-main col-main
+				+main-menu('3',`Цели и задачи`,`Руководство Консорциума`,`План работы`)
+			.col-lg-9.col-main
+				+sPlan
 	+sForm()
 	
 	+footer()

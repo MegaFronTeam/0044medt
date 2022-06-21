@@ -1,0 +1,121 @@
+// start .sManager
+.sManager {
+	--sPT: #{rem(0)};
+	--sPB: #{rem(0)};
+	// --sTPB: #{rem()};
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+	&__job {
+		color: #676767;
+		line-height: 150%;
+		margin-bottom: rem(6);
+	}
+	.row {
+		--bs-gutter-y: #{var(--bs-gutter-x)};
+	}
+	h2 {
+		color: $blue;
+		margin-bottom: rem(6);
+	}
+	&__birth {
+		display: flex;
+	}
+	&__date,
+	&__city {
+		color: $black;
+		font-size: rem(13);
+		line-height: calc(18 / 13);
+		font-weight: 500;
+	}
+	&__date {
+		margin-right: rem(26);
+	}
+	&__mini-caption {
+		margin-top: rem(6);
+		@include media-breakpoint-up(lg) {
+			max-width: rem(400);
+		}
+		font-size: rem(13);
+		line-height: calc(18 / 13);
+		color: #676767;
+	}
+	p {
+		margin-top: rem(32);
+		margin-bottom: 0;
+		line-height: 150%;
+	}
+	&__block {
+		margin-top: rem(32);
+	}
+	&__wrap {
+		@include media-breakpoint-up(lg) {
+			max-width: rem(724);
+		}
+	}
+	h5 {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 150%;
+		margin-bottom: 0;
+	}
+	&__block-item {
+		display: flex;
+		margin-top: rem(16);
+		ul {
+			margin-top: rem(4);
+		}
+	}
+	&__block-item-date {
+		@include media-breakpoint-up(md) {
+			width: rem(114);
+			min-width: rem(114);
+		}
+		width: rem(80);
+		min-width: rem(79.999999);
+		max-width: rem(80);
+		padding-right: rem(8);
+		font-size: rem(13);
+		line-height: calc(18 / 13);
+		color: #676767;
+		font-weight: 500;
+	}
+	&__block-item-caption {
+		line-height: 150%;
+	}
+	&__block-item-small {
+		margin-top: rem(4);
+		font-size: rem(13);
+		line-height: calc(18 / 13);
+		color: #676767;
+		font-weight: 500;
+	}
+	ul {
+		padding-left: rem(20);
+		font-size: rem(13);
+		line-height: calc(18 / 13);
+		color: #676767;
+		font-weight: 500;
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sManager

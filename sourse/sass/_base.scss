@@ -573,3 +573,12 @@ iframe {
 		width: 100%;
 	}
 }
+
+.col-main{
+	@include media-breakpoint-up(lg){
+		padding-left: rem(32);
+	}
+}
+.row-main{
+	--bs-gutter-y:#{rem(16)};
+}

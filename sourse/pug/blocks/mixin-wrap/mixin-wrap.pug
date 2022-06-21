@@ -50,11 +50,18 @@ mixin btn-file()
 		+item(`Манифест`,`PDF 3 mb`)
 		+item(`Заявление о включении`,`DOCx 1.6 mb`)
 
-mixin pageHead(t)
+mixin pageHead(t,...items)
 	+b.page-head&attributes(attributes)
 		.container
-			+breadcrumb('Главная','О консорциуме','Руководство Консорциума')
+			+breadcrumb(...items)
 			h1= t
+
+mixin pageHeadBack(...items)
+	+b.page-head&attributes(attributes)
+		.container
+			+breadcrumb(...items)
+			+e.link-back(href="#")
+				+icon('arrow-left')
 
 
 mixin main-menu(active,...items)
