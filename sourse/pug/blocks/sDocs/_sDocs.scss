@@ -40,6 +40,7 @@
 .doc-item {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	box-shadow: 0px 22px 61px rgba(0, 0, 0, 0.13);
 	border-radius: 8px;
 	background-color: $white;
