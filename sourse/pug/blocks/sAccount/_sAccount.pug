@@ -1,0 +1,14 @@
+mixin sAccount(data)
+	// start sAccount
+	+b.sAccount.section#sAccount&attributes(attributes)
+		.container
+			+e.sign-in
+				+form-wrap
+					+input('Введите', 'text', 'Логин')
+						+icon('login')
+					+e.btn.btn.btn-danger(type="submit") Войти в личный кабинет
+					p Забыли пароль? 
+						a(href="#") Востановить
+					p Еще нет личного личного кабинета? 
+						a(href="#") Зарегистрируйтесь
+	// end sAccount
