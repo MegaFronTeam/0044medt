@@ -5,4 +5,5 @@
 2. <https://megafronteam.github.io/0044medt/public/06-manager-02.html>
 2. <https://megafronteam.github.io/0044medt/public/06-manager-03.html>
 2. <https://megafronteam.github.io/0044medt/public/06-manager-04.html>
+3. <https://megafronteam.github.io/0044medt/public/07-plan.html>
 3. <https://megafronteam.github.io/0044medt/public/00-modal.html>
