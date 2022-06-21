@@ -1,0 +1,38 @@
+extends ../layout/main.pug
+
+include ../blocks/header/_header.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sDocs/_sDocs.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage=  null
+	- let  bg= null
+
+block title
+	- let  title= 'Документы на вступление'
+	title= title
+block pagecontent
+	+top-nav()
+	+pageHead(title,'Главная','Рабочие группы','Список рабочих групп')
+	.mainblock.container
+		.row.row-main
+			.col-lg-3.col-aside
+				+main-menu('2',`Список рабочих групп`,`Документы на вступление`,`Регламент деятельности рабочих&nbsp;групп`)
+			.col-lg-9.col-main
+				+sDocs
+	+sForm()
+	
+	+footer()
+      
+
+
+

@@ -7,4 +7,5 @@
 2. <https://megafronteam.github.io/0044medt/public/06-manager-04.html>
 3. <https://megafronteam.github.io/0044medt/public/07-plan.html>
 3. <https://megafronteam.github.io/0044medt/public/08-groups.html>
+3. <https://megafronteam.github.io/0044medt/public/09-docs.html>
 3. <https://megafronteam.github.io/0044medt/public/00-modal.html>
