@@ -568,3 +568,8 @@ iframe {
 
 	}
 }
+.col-aside{
+	@include media-breakpoint-down(lg){
+		width: 100%;
+	}
+}

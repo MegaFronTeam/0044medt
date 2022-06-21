@@ -370,6 +370,12 @@ function eventHandler() {
 		freeMode: true, 
 		loop: true
 	});
+	const breadcrumbSlider = new Swiper('.breadcrumb-slider', { 
+		slidesPerView: 'auto',
+	});
+	const mainMenuSlider = new Swiper('.main-menu--js', { 
+		slidesPerView: 'auto',
+	});
 
 
 	// modal window
