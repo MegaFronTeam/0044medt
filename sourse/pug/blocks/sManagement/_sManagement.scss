@@ -47,7 +47,7 @@
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
-	@include media-breakpoint-up(md){
+	@include media-breakpoint-up(md) {
 		justify-content: space-between;
 		flex-direction: row;
 		padding-right: rem(32);
@@ -57,7 +57,7 @@
 			padding: rem(32);
 			max-width: calc(100% - rem(260));
 		}
-		@include media-breakpoint-up(xl){
+		@include media-breakpoint-up(xl) {
 			max-width: calc(100% - rem(360));
 		}
 		padding: rem(16);
@@ -82,22 +82,23 @@
 		color: #1f1f1f;
 		margin-bottom: rem(20);
 	}
-	&__link{
+	&__link {
 		font-weight: 600;
 		margin-top: auto;
 		display: inline-block;
+		color: $blue;
 	}
-	picture{
+	picture {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		@include media-breakpoint-up(xl){
+		@include media-breakpoint-up(xl) {
 			width: rem(320);
 		}
-		@include media-breakpoint-up(md){
+		@include media-breakpoint-up(md) {
 			width: rem(240);
 		}
-		img{
+		img {
 			max-height: 100%;
 		}
 	}

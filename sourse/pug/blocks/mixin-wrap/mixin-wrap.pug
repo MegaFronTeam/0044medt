@@ -56,6 +56,13 @@ mixin pageHead(t,...items)
 			+breadcrumb(...items)
 			h1= t
 
+mixin pageHeadBack(...items)
+	+b.page-head&attributes(attributes)
+		.container
+			+breadcrumb(...items)
+			+e.link-back(href="#")
+				+icon('arrow-left')
+
 
 mixin main-menu(active,...items)
 	+b.main-menu--js.swiper

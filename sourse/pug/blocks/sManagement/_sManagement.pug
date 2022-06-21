@@ -10,9 +10,9 @@ mixin sManagement(data)
 	// end sManagement
 
 mixin management-item(job,name,pic)
-	a.management-item(href="#")
-		.management-item__text-block
-			.management-item__job!=job
-			.management-item__name!=name
-			.management-item__link(href="#") Биография → 
+	+b.management-item(href="#")
+		+e.text-block
+			+e.job!=job
+			+e.name!=name
+			+e.link Биография → 
 		+pic(`management-${pic}.png`,``,0)
