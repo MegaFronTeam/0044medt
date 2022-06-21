@@ -4,11 +4,54 @@ mixin sAccount(data)
 		.container
 			+e.sign-in
 				+form-wrap
-					+input('Введите', 'text', 'Логин')
+					+input('Логин', 'text')
 						+icon('login')
+					+input('Пароль', 'text')
+						+icon('lock')
 					+e.btn.btn.btn-danger(type="submit") Войти в личный кабинет
-					p Забыли пароль? 
-						a(href="#") Востановить
-					p Еще нет личного личного кабинета? 
-						a(href="#") Зарегистрируйтесь
+				p Забыли пароль? 
+					a(href="#") Востановить
+				p Еще нет личного личного кабинета? 
+					a(href="#") Зарегистрируйтесь
 	// end sAccount
+
+mixin sAccount2(data)
+	// start sAccount
+	+b.sAccount.section#sAccount&attributes(attributes).bg-wrap
+		+pageHead(title, 'Главная', 'Услуги центра компетенций')
+		.container
+			+e.reg
+				.row
+					.col-lg-8
+						+form-wrap()
+							+e.input-row.row
+								.col-lg-6
+									+input('ФИО', 'text')
+								.col-lg-6
+									+input('Номер телефона компании', 'tel')
+								.col-lg-6
+									+input('Email (используется для входа)', 'email')
+								.col-lg-6
+									+input('Название компании', 'email')
+								.col-12
+									+input('Адрес местонахождения компании', 'text')
+								.col-lg-6
+									+input('Сайт компании', 'text')
+								.col-lg-6
+									+input('Сфера деятельности компании', 'text')
+								.col-12
+									+input('Описание производимого/поставляемого оборудования', 'textarea')
+								.col-12
+									h6 Придумайте пароль
+								.col-md-6
+									+input('Новый пароль', 'text')
+								.col-md-6
+									+input('Повторите пароль', 'text')
+								.col-12 
+									+policy2()
+								.col
+									+e.btn-reg.btn.btn-danger(type="submit") Зарегистрироваться
+						p Есть личный кабинет? 
+							a(href="#") Войти
+					.col-4
+						+img('img/reg-bg.jpg')

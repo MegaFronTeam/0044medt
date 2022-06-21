@@ -1,12 +1,17 @@
 // start .sAccount
 .sAccount {
-	// --sPT: #{rem()};
-	// --sPB: #{rem()};
+	--sPT: #{rem(0)};
+	--sPB: #{rem(0)};
 	// --sTPB: #{rem()};
+	position: relative;
+	@include media-breakpoint-up(lg) {
+		// --sPT: #{rem(87)};
+		// --sPB: #{rem(80)};
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
-
+		
 	}
 	.section-title{
 		
@@ -18,8 +23,10 @@
 
 	}
 	&__sign-in {
+		padding-top: rem(47);
+		padding-bottom: 0;
 		width: 100%;
-		max-width: rem(498);;
+		max-width: rem(498);
 		margin-left: auto;
 		margin-right: auto;
 		.form-wrap {
@@ -30,20 +37,84 @@
 				margin-right: auto;
 				display: block;
 			}
+			&__input-wrap {
+				position: relative;
+				color: $blue;
+				.icon {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 16px;
+					font-size: rem(24);
+				}
+			}
+			&__input-title {
+				left: rem(55);
+			}
+			&__input {
+				padding-left: rem(55);
+			}
 			&__btn {
 				border-radius: 10px;
 				margin-bottom: rem(36);
 			}
-			p {
-				text-align: center;
-				color: #1F1F1F;
-				font-weight: 600;
-				&:last-child {
-					margin-bottom: 0;
-				}
-				a {
-					color: $red;
-				}
+		}
+		p {
+			text-align: center;
+			color: #1F1F1F;
+			font-weight: 600;
+			font-size: rem(18);
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				color: $red;
+			}
+		}
+	}
+	&__reg {
+		padding-bottom: rem(55);
+		.form-wrap {
+			&__input-row {
+				--bs-gutter-y: #{rem(32)};
+			}
+			&__input-wrap {
+				--sp-y: #{rem(23)};
+				margin-bottom: 0;
+			}
+			&__policy {
+				margin-bottom: rem(13.5);
+			}
+			&__btn-reg {
+				width: 100%;
+				max-width: rem(237);
+				margin-bottom: rem(32);
+			}
+			textarea {
+				min-height: rem(178);
+			}
+		}
+		img {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: -1;
+			height: 100%;
+		}
+		h6 {
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+		p {
+			color: #1F1F1F;
+			font-weight: 600;
+			margin-bottom: 0;
+			font-size: rem(18);
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				color: $red;
 			}
 		}
 	}
