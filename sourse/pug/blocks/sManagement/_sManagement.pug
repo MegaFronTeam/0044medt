@@ -1,0 +1,18 @@
+mixin sManagement(data)
+	// start sManagement
+	+b.SECTION.sManagement.section#sManagement&attributes(attributes)
+		+b.section-title
+			h2 Руководство Консорциума
+		+management-item(`Председатель правления`,`Ожгихин<br />Иван Владимирович`,`1`)
+		+management-item(`Генеральный директор`,`Назаров<br />Виктор Борисович`,`2`)
+		+management-item(`Руководитель Центра`,`Литвицкий<br />Кирилл Петрович`,`3`)
+		+management-item(`Заместитель генерального директора`,`Бинько<br />Константин Александрович`,`4`)
+	// end sManagement
+
+mixin management-item(job,name,pic)
+	a.management-item(href="#")
+		.management-item__text-block
+			.management-item__job!=job
+			.management-item__name!=name
+			.management-item__link(href="#") Биография → 
+		+pic(`management-${pic}.png`,``,0)
