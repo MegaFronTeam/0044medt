@@ -1,11 +1,11 @@
 // start .sServices
 .sServices {
 	--sPT: #{rem(0)};
-	--sPB: #{rem(60)};
+	--sPB: #{rem(35)};
 	// --sTPB: #{rem()};
-	@include media-breakpoint-up(lg) {
-		--sPB: #{rem(120)};
-	}
+	// @include media-breakpoint-up(lg) {
+	// 	--sPB: #{rem(120)};
+	// }
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
@@ -72,44 +72,47 @@
 			margin-bottom: rem(35);
 		}
 	}
-	&__checkboxes-wrap-row {
-		--bs-gutter-x: #{rem(16)};
-		--bs-gutter-y: var(--bs-gutter-x);
-		.custom-input {
-			padding: rem(8) rem(16);
-			background-color: #F3F4F6;
-			color: $primary;
-			border-radius: 10px;
-			position: relative;
-			z-index: 2;
-			cursor: pointer;
-			margin-bottom: 0;
-			&__input {
-				cursor: pointer;
-				margin-top: 0;
-				margin-left: 0;
-				position: absolute;
-				z-index: -1;
+	.filter-block {
+		margin-bottom: rem(31);
+		@include media-breakpoint-down(md) {
+			label, .btn {
 				width: 100%;
-				height: 100%;
-				border-radius: 10px;
-				border: 2px solid transparent;
-				background-color: transparent;
-				top: 0;
-				left: 0;
-				&:checked[type=checkbox] {
-					background-image: none;
-					border-color: $primary;
-					background-color: #5E6492;
-					& + .custom-input__text {
-						color: #fff;
-					}
-				}
-			}
-			&__text {
-				font-weight: 600;
 			}
 		}
+		.btn {
+			--bs-btn-border-color: transparent;
+			--bs-btn-hover-color: #{$primary};
+			--bs-btn-hover-bg: inherit;
+			--bs-btn-bg: #F3F4F6;
+			--bs-btn-hover-border-color: #{$primary}; 
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg:  #5E6492;
+		}
+	}
+	&__wrap {
+		display: flex;
+		align-items: center;
+	}
+	&__result {
+		margin-right: auto;
+		@include media-breakpoint-up(sm) {
+			margin-right: rem(56);
+		}
+		p {
+			font-weight: 600;
+			color: $primary;
+			margin-bottom: rem(4);
+		}
+		a {
+			font-size: rem(13);
+			font-weight: 500;
+			color: $danger;
+		}
+	}
+	&__btn {
+		--bs-btn-padding-y: 13.5px;
+		width: 100%;
+		max-width: rem(126);
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

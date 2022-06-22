@@ -2,16 +2,67 @@
 mixin modal() 
 	//  start modals
 	//- a(href="modal-call").link-modal-js modal-call 
-	div(id="modal-call"  style="display: none" )
-		+b.modal-win
-			+form-wrap
-				.text-center
-					+e.title.form-data.h3.ttu Обратный звонок
-					p.after-headline Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут
-
-				+input("Ваше Имя")(required)  
-				+e.BUTTON.btn.btn(type="submit"  )  
-				+policy()
+	+b.modal-order-service.modal-win(id="order-service"  style="display: none" )
+		.modal-title.h4 Заказать услуги
+		+form-wrap
+			+input("Ваше Имя", 'text')(required)
+				+icon('user')
+			+input("Ваш номер телефона", 'tel')(required)
+				+icon('phone-call')
+			+input("Ваш e-mail", 'email')(required)
+				+icon('login')
+			+e.BUTTON.btn.btn.btn-danger(type="submit") Заказать
+			p Нажимая кнопку Заказать вы подтверждаете что ознакомлены с 
+				a(href="#") политикой конфиденциальности 
 	// #modal-call
 	
+	+b.modal-order-service2.modal-win(id="order-service2"  style="display: none" )
+		+form-wrap
+			+e.group--header
+				.h4 Заказать услуги
+			+e.group--body
+				+e.row.row
+					.col-auto
+						+img('img/sPartnersitem-img-1.png')
+					.col
+						.h4 Ассоциация производителей и поставщиков лекарственных средств, изделий и техники медицинского назначения (РОСМЕДПРОМ)
+				.h6 Выберите интересующие вас услуги:
+				+b.filter-block
+					label
+						input.btn-check(type="checkbox", name="service")
+						span.btn.btn-outline-primary I. Клиническая база Взаимодействие с научно-медицинским сообществом
+					label
+						input.btn-check(type="checkbox", name="service")
+						span.btn.btn-outline-primary II. Консультационные услуги в сфере обращения медицинских изделий 
+					label
+						input.btn-check(type="checkbox", name="service")
+						span.btn.btn-outline-primary III. Маркетинговое исследование рынка и продвижение продукции на рынке
+					label
+						input.btn-check(type="checkbox", name="service")
+						span.btn.btn-outline-primary IV. Дистрибуция
+					label
+						input.btn-check(type="checkbox", name="service")
+						span.btn.btn-outline-primary V. Кадровые компетенции для предприятий
+					label
+						input.btn-check(type="checkbox", name="service")
+						span.btn.btn-outline-primary XI. Развитие кооперационных связей, субконтрактинга. Формирование промышленной политики через закупки
+				+e.input-row.row
+					.col-md-4
+						+input('Ваше имя', 'text')
+							+icon('user')
+					.col-md-4
+						+input('Ваш номер телефона', 'tel')
+							+icon('phone-call')
+					.col-md-4
+						+input('Ваш e-mail', 'email')
+							+icon('login')
+			+e.group--footer
+				.row
+					.col-md-4
+						p Нажимая кнопку Заказать вы подтверждаете что ознакомлены с 
+							a(href="#") политикой конфиденциальности 
+					.col-auto.ms-md-auto
+						+e.result.h6 Выбрано услуг: 1
+					.col-sm-auto
+						+e.BUTTON.btn.btn.btn-danger(type="submit") Заказать
 	// end modals
