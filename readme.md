@@ -10,4 +10,5 @@
 3. <https://megafronteam.github.io/0044medt/public/09-docs.html>
 3. <https://megafronteam.github.io/0044medt/public/12-sign-in.html>
 3. <https://megafronteam.github.io/0044medt/public/13-registration.html>
+3. <https://megafronteam.github.io/0044medt/public/14-account.html>
 3. <https://megafronteam.github.io/0044medt/public/00-modal.html>

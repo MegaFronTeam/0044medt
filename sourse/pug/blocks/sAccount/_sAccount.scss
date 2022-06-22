@@ -9,9 +9,11 @@
 		// --sPB: #{rem(80)};
 	}
 	&__row{
-		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem()};
-		
+		--bs-gutter-x: #{rem(47)};
+		--bs-gutter-y: #{rem(25)};
+		@include media-breakpoint-up(lg) {
+			--bs-gutter-y: #{rem(35)};
+		}
 	}
 	.section-title{
 		
@@ -115,6 +117,137 @@
 			}
 			a {
 				color: $red;
+			}
+		}
+	}
+	&__account {
+		padding-bottom: rem(35);
+		@include media-breakpoint-up(lg) {
+			padding-bottom: rem(76);
+		}
+	}
+	&__wrap {
+		background-color: #F3F4F6;
+		border-radius: 10px;
+		padding: rem(16) rem(16);
+		height: 100%;
+		@include media-breakpoint-up(sm) {
+			padding: rem(26) rem(32);
+		}
+		h3 {
+			margin-bottom: rem(7);
+			@include media-breakpoint-down(sm) {
+				font-size: rem(18);
+			}
+		}
+		p {
+			margin-bottom: rem(7);
+			font-size: rem(13);
+		}
+		&--contact-info {
+			background-color: $primary;
+			display: flex;
+			flex-direction: column;
+			color: #F3F4F6;
+			@include media-breakpoint-up(lg) {
+				max-width: rem(336);
+
+			}
+			h6 {
+				margin-bottom: rem(14);
+			}
+		}
+	}
+	&__adress {
+		font-size: rem(13);
+		font-weight: 500;
+		color: #B5B5B5;
+		margin-bottom: rem(11);
+	}
+	&__contact-row {
+		--bs-gutter-x: #{rem(45)};
+		margin-bottom: rem(25);
+		a {
+			font-weight: 600;
+			&:not(:hover) {
+				color: $gray-900;
+			}
+		}
+		.icon {
+			margin-right: rem(16);
+			font-size: rem(16);
+		}
+	}
+	&__control-row {
+		--bs-gutter-x: #{rem(32)};
+	}
+	&__manipulation {
+		font-size: rem(13);
+		font-weight: 500;
+		&:not(:hover) {
+			color: $primary;
+		}
+		.icon {
+			margin-right: rem(14);
+			font-size: rem(16);
+		}
+	}
+	&__log-out {
+		font-size: rem(13);
+		font-weight: 500;
+		&:not(:hover) {
+			color: $danger;
+		}
+	}
+	&__contact {
+		color: $gray-600;
+		margin-bottom: rem(14);
+	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+	&__contact-link {
+		color: $gray-600;
+		font-weight: 600;
+		margin-bottom: rem(7);
+		&:last-child {
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 0;
+			}
+		}
+		.icon {
+			font-size: rem(16);
+			color: #fff;
+			flex: 0 0 auto;
+			margin-right: rem(16);
+		}
+		&:hover {
+			color: #fff;
+		}
+	}
+	&__edit-profile {
+		color: #fff;
+		font-size: rem(13);
+		.icon {
+			font-size: rem(16);
+			flex: 0 0 auto;
+			margin-right: rem(16);
+		}
+		&:hover {
+			color: $gray-600;
+		}
+	}
+	&__text-wrap {
+		h4 {
+			margin-bottom: rem(19);
+		}
+		p {
+			color: $gray-900;
+			line-height: 1.50em;
+			&:not(:last-of-type) {
+				margin-bottom: rem(30);
 			}
 		}
 	}

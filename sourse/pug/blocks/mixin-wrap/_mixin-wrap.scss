@@ -102,6 +102,9 @@
 			stroke: currentColor;
 		}
 	}
+	&--account {
+		padding-bottom: rem(18);
+	}
 }
 .breadcrumb.swiper-wrapper {
 	flex-wrap: nowrap;
