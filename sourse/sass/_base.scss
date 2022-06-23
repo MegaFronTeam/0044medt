@@ -611,5 +611,8 @@ iframe {
 		.menu a.active, .menu a:hover {
 			border-color: #fff;
 		}
+		&__btn.btn-outline-primary {
+			@extend .btn-primary;
+		}
 	}
 }
