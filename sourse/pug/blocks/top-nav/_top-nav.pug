@@ -17,14 +17,17 @@ mixin mob-mnu()
 		+e.inner
 			+mnu()
 	//  мобильное меню
-mixin top-nav() 
+mixin top-nav(logoWhite) 
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
 			.row
 				.col-xl-auto.col
 					+e.logo(href="/").z-10
-						img(src="img/logo.png", alt="")
+						if logoWhite
+							img(src="img/logoWhite.png", alt="")
+						else
+							img(src="img/logo.png", alt="")
 				.col-xl.col-12.order-xl-0.order-last
 					
 					.menu-mobile.menu-mobile--js
@@ -43,29 +46,3 @@ mixin top-nav()
 				.col-auto.d-xl-none
 					+menu-toggle()
 	// end top-nav
-
-mixin top-nav2() 
-	// start top-nav
-	+b.top-nav.block-with-lazy.text-white
-		.container
-			.row
-				.col-xl-auto.col
-					+e.logo(href="/").z-10
-						img(src="img/logoWhite.png", alt="")
-				.col-xl.col-12.order-xl-0.order-last
-					
-					.menu-mobile.menu-mobile--js
-						.menu-mobile__inner
-							+menu-toggle()
-							.row
-								.col-xl
-									+mnu()
-								.col-xl-auto
-									a.top-nav__btn.btn.btn-danger(href="#") Написать нам
-								.col-xl-auto
-									a.top-nav__btn.btn.btn-primary(href="#") Услуги центра 
-				.col-auto
-					+e.btn--cabinet.btn.btn-primary(href="#") 
-						+icon("user")
-				.col-auto.d-xl-none
-					+menu-toggle()
