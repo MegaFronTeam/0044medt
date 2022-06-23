@@ -1,0 +1,113 @@
+// start .sGoals
+.sGoals {
+	--sPT: 0;
+	--sPB: 0;
+	// --sTPB: #{rem()};
+	&__row{
+		--bs-gutter-y: #{rem(24)};
+	}
+	.section-title{
+		margin-bottom: rem(54);
+		h2 {
+			margin-bottom: rem(30);
+			color: $body-color;
+		}
+		p {
+			@extend .h4;
+			color: $gray-900;
+			line-height: 1.5em;
+			font-weight: 500;
+			margin-bottom: 0;
+			span {
+				color: $body-color;
+			}
+		}
+	}
+	&__col{
+
+	}
+	&__list {
+		margin-bottom: rem(54);
+		h3 {
+			margin-bottom: rem(32);
+		}
+	}
+	&__item{
+		img {
+			margin-bottom: rem(16);
+		}
+		p {
+			color: $gray-900;
+			line-height: 1.5em;
+		}
+	}
+	&__content {
+		h3 {
+			margin-bottom: rem(26);
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(54);
+			}
+		}
+	}
+	&__list-item {
+		max-width: rem(933);
+		&:not(:last-child) {
+			margin-bottom: rem(56);
+		}
+		h6 {
+			font-weight: 600;
+			border-top: 9px solid #F3F4F6;
+			padding-top: rem(16);
+			margin-bottom: rem(22);
+		}
+		ul {
+			list-style-type: none;
+			& > li {
+				position: relative;
+				padding-left: rem(30);
+				&:before {
+					content: '';
+					position: absolute;
+					display: block;
+					width: 6px;
+					height: 6px;
+					background-color: $primary;
+					border-radius: 50%;
+					left: 8px;
+					top: 9px;
+				}
+				&:not(:last-child) {
+					margin-bottom: rem(16);
+				}
+			}
+			ol {
+				list-style-type: none;
+				counter-reset: num;
+				li {
+					padding-left: rem(28);
+					position: relative;
+					color: $gray-900;
+					font-weight: 500;
+					&:not(:last-child) {
+						margin-bottom: rem(10);
+					}
+					&:before {
+						content: counter(num);
+						position: absolute;
+   					counter-increment: num;
+						left: 0;
+						top: 0;
+						color: $primary;
+					}
+				} 
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sGoals
