@@ -1,0 +1,92 @@
+// start .sRegulations
+.sRegulations {
+	--sPT: 0;
+	--sPB: 0;
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		margin-bottom: rem(27);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(54);
+		}
+		h2 {
+			margin-bottom: rem(30);
+		}
+		p {
+			@extend .h4;
+			color: $gray-900;
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	& > ol {
+		counter-reset: num;
+		& > li {
+			@extend .h3;
+			list-style-type: none;
+			counter-increment: num;
+			&:not(:last-child) {
+				margin-bottom: rem(32);
+				@include media-breakpoint-up(lg) {
+					margin-bottom: rem(56);
+				}
+			}
+			&:before {
+				content: counter(num) '. ';
+			}
+		}
+	}
+	ol {
+		counter-reset: num2;
+		padding-left: 0;
+		ol {
+			padding-top: rem(20);
+			@include media-breakpoint-up(lg) {
+				padding-top: rem(32);
+			}
+		}
+		li {
+			li {
+				list-style-type: none;
+				font-size: rem(16);
+				font-weight: 400;
+				line-height: 1.5em;
+				position: relative;
+				padding-left: rem(35);
+				@include media-breakpoint-up(lg) {
+					padding-left: rem(53);
+				}
+				&:not(:last-child) {
+					margin-bottom: rem(16);
+				}
+				&:before {
+					content: counter(num) '.' counter(num2);
+					counter-increment: num2;
+					position: absolute;
+					font-size: rem(18);
+					font-weight: 600;
+					color: $primary;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sRegulations

@@ -10,6 +10,7 @@
 3. <https://megafronteam.github.io/0044medt/public/07-plan.html>
 3. <https://megafronteam.github.io/0044medt/public/08-groups.html>
 3. <https://megafronteam.github.io/0044medt/public/09-docs.html>
+3. <https://megafronteam.github.io/0044medt/public/10-regulations.html>
 3. <https://megafronteam.github.io/0044medt/public/12-sign-in.html>
 3. <https://megafronteam.github.io/0044medt/public/13-registration.html>
 3. <https://megafronteam.github.io/0044medt/public/14-account.html>
