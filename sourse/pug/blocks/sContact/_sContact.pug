@@ -1,9 +1,36 @@
 mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
+		+img('img/11Contacts-bg.jpg').contact-bg
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
-			.row
+			+b.section-title
+				h2 АНО «Консорциум “Медицинская Техника»
+			+e.row.row
+				.col-lg-6
+					.row
+						+e.col.col-12
+							+e.text
+								span Адрес:
+								p 129366, г. Москва, проспект Мира, д.176
+							+e.text
+								span E-mail:
+								a(href="#") info@anokmt.ru
+						.col-12
+							+e.content
+								h2 Написать нам
+								+form-wrap
+									+input('Ваше имя', 'text')
+										+icon('user')
+									+input('Ваш номер телефона', 'tel')
+										+icon('phone-call')
+									+input('Ваш e-mail', 'email')
+										+icon('login')
+									+input('Ваше сообщение', 'textarea')
+									+e.submit-row.row 
+										.col-auto
+											button(type="submit").btn.btn-danger Отправить
+										.col
+											p Нажимая кнопку Отправить вы подтверждаете что ознакомлены с #[a(href="#") политикой конфиденциальности]
+				.col-lg-6.ms-auto
+					.map#map
 	// end sContact

@@ -1,7 +1,121 @@
 
 	// start .sContact
-	.sContact {
-		 
+.sContact {
+	--sPT: 0;
+  --sPB: #{rem(20)};
+	.contact-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	.section-title {
+		margin-bottom: rem(48);
+		h2 {
+			color: #fff;
+			margin-bottom: 0;
+		}
+	}
+	&__row {
+		--bs-gutter-y: #{rem(20)};
+	}
+	&__col {
+		margin-bottom: rem(184);
+		@include media-breakpoint-up(sm) {
+			margin-bottom: rem(136);
+		}
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		&:not(:last-child) {
+			margin-bottom: rem(18);
+		}
+		span {
+			font-size: rem(18);
+			color: #B5B5B5;
+			margin-bottom: rem(5);
+		}
+		p, a {
+			color: #fff;
+			font-size: rem(25);
+			margin-bottom: 0;
+			@include media-breakpoint-up(sm) {
+				font-size: rem(32);
+			}
+		}
+		a {
+			&:hover {
+				color: #B5B5B5;
+			}
+		}
+	}
+	&__content {
+		@include media-breakpoint-up(lg) {
+			max-width: rem(495);
+		}
+		h2 {
+			margin-bottom: rem(42);
+		}
+	}
+	.form-wrap {
+		&__submit-row {
+			--bs-gutter-y: #{rem(15)};
+		}
+		&__input-wrap {
+			--sp-y: #{rem(23)};
+			position: relative;
+			margin-bottom: rem(21);
+			.icon {
+				color: $primary;
+				position: absolute;
+				left: 16px;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: rem(24);
+			}
+		}
+		&__input {
+			padding-left: rem(55);
+		}
+		&__input-title {
+			padding-left: rem(55);
+		}
+		textarea {
+			padding-left: rem(16);
+			min-height: rem(131);
+			margin-bottom: rem(11);
+			& ~ .form-wrap__input-title {
+				padding-left: rem(16);
+			}
+		}
+		button {
+			width: rem(162);
+			--bs-btn-padding-y: #{rem(19)};
+		}
+		p {
+			font-size: rem(13);
+			font-weight: 600;
+			a {
+				color: $red;
+			}
+		}
+	}
+	.map {
+		@include block(632, 864);
+		box-shadow: 0px 22px 61px rgba(0, 0, 0, 0.13);
+		border-radius: 10px;
+    overflow: hidden;
+		& > * {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+			// border-radius: 10px;
+			// overflow: hidden;
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

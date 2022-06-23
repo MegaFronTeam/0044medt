@@ -377,7 +377,25 @@ function eventHandler() {
 		slidesPerView: 'auto',
 	});
 
+	var myMap;
+	var myPlacemark1;
+	// Дождёмся загрузки API и готовности DOM.
+	ymaps.ready(init);
 
+	function init () {
+		// Создание экземпляра карты и его привязка к контейнеру с
+		// заданным id ("map").
+		myMap = new ymaps.Map('map', {
+				// При инициализации карты обязательно нужно указать
+				// её центр и коэффициент масштабирования.
+				center:[55.82326206891169,37.645905499999955], // Москва
+				zoom:17
+		}),
+		myPlacemark1 = new ymaps.Placemark([55.82326206891169,37.645905499999955], {
+		});
+		myMap.geoObjects
+			.add(myPlacemark1);
+		}
 	// modal window
 
 };

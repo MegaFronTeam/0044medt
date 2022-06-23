@@ -57,6 +57,22 @@
 			font-size: rem(20);
 		}
 	}
+	&.text-white {
+		&::before {
+			border-bottom-color: rgba($color: $gray-600, $alpha: .2);
+		}
+		* {
+			@include media-breakpoint-up(lg) {
+				color: #fff;
+			}
+		}
+		.toggle-menu-mobile {
+			--color: #fff;
+		}
+		.menu a.active, .menu a:hover {
+			border-color: #fff;
+		}
+	}
 	@include media-breakpoint-up(md) {}
 
 	@include media-breakpoint-up(sm) {}
