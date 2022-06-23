@@ -14,15 +14,15 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/footer/_footer.pug
 
 block variables
-	- let  mainPage=  null
+	- let  mainPage=  'contacts'
 	- let  bg= null
 
 block title
 	- let  title= 'Контакты'
 	title= title
 block pagecontent
-	+top-nav2()
-	+pageHead(title,'Главная','Контакты').--text-white
+	//- +top-nav2()
+	//- +pageHead(title,'Главная','Контакты').--text-white
 	+sContact()
 	+sForm()
 	+footer()

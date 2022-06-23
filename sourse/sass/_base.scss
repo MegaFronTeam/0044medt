@@ -582,3 +582,34 @@ iframe {
 .row-main{
 	--bs-gutter-y:#{rem(16)};
 }
+
+.contacts {
+	.page-head {
+		padding-bottom: rem(24);
+		@include media-breakpoint-up(lg) {
+			padding-bottom: rem(24);
+		}
+		.breadcrumb-item+.breadcrumb-item:before {
+			--bs-breadcrumb-divider-color: #fff;
+		}
+		*, h1 {
+			color: #fff;
+		}
+	}
+	.top-nav {
+		&::before {
+			border-bottom-color: rgba($color: $gray-600, $alpha: .2);
+		}
+		* {
+			@include media-breakpoint-up(lg) {
+				color: #fff;
+			}
+		}
+		.toggle-menu-mobile {
+			--color: #fff;
+		}
+		.menu a.active, .menu a:hover {
+			border-color: #fff;
+		}
+	}
+}
