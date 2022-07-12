@@ -117,10 +117,14 @@
 					@include media-breakpoint-up(lg){
 					align-self: flex-end;
 					flex-grow: 1;
+					img{
+						max-width: 303px;
+					}
 					}
 				}
 			}
 		}
+
 	
 		&:nth-child(5) { 
 			.team-item{
@@ -164,6 +168,8 @@
 					img{
 						position: absolute;
 						right: 0;bottom: 0;
+						max-width: 260px;
+						max-height: 200px;
 					}
 				}
 			}
@@ -207,9 +213,9 @@
 		margin-bottom: 1rem;
 	}
 	img{
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(lg) {
 			max-width: 100%;
-			
+			height: auto;
 		}
 	}
 	&__text{
