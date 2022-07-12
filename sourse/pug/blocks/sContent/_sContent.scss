@@ -52,6 +52,10 @@
 		}
 	}
 	&__btn {
+		display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: rem(235);
 		--bs-btn-padding-x: #{rem(20)};
 		--bs-btn-color: #{$primary};
 		--bs-btn-border-color: #{$primary};
