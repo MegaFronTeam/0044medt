@@ -1,0 +1,40 @@
+extends ../layout/main.pug
+
+include ../blocks/header/_header.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sForm/_sForm.pug
+include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage=  null
+	- let  bg= null
+
+block title
+	- let  title= 'Новость'
+	title= title
+block pagecontent
+	+top-nav()
+	+pageHeadBack('Главная', 'Новости', '«Консорциум» Медицинская техника» и Сеченовский Университет подписали соглашение о сотрудничестве')
+	//- .mainblock.container
+	//- 	.row.row-main
+	//- 		.col-3.col-aside
+	//- 			+main-menu('1',`Цели и задачи`,`Руководство Консорциума`,`План работы`)
+	//- 		.col-9.col-main col-main
+	//- +sAccount3
+	//- +sForm()
+	+sContent()
+	+sForm
+	+footer()
+      
+
+
+

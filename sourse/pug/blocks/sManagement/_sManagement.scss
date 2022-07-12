@@ -21,7 +21,12 @@
 	&__item {
 	}
 	.management-item {
+		background-color: #DCE5FF;
 		margin-bottom: rem(32);
+		box-shadow: 0px 22px 61px transparent;
+		&:hover {
+			box-shadow: 0px 22px 61px rgba(0, 0, 0, 0.13);
+		}
 		&:last-child {
 			margin-bottom: 0;
 		}
