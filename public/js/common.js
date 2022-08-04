@@ -398,6 +398,20 @@ function eventHandler() {
 		}
 	// modal window
 
+	const sPartnersSliderSwiper = new Swiper('.sPartnersSlider__slider--js', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();
