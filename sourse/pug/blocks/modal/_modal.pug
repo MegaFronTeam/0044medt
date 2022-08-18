@@ -15,6 +15,12 @@ mixin modal()
 			p Нажимая кнопку Заказать вы подтверждаете что ознакомлены с 
 				a(href="#") политикой конфиденциальности 
 	// #modal-call
+
+	+b.modal-thx.modal-win(id="modal-thx"  style="display: none" )
+		.modal-title.h4 Ваше сообщение успешно отправленно
+		.after-headline Мы свяжемся с вами в ближайшее время для уточнения деталей
+		+e.btn(href='#').btn.btn-danger Ок
+	// #modal-call
 	
 	+b.modal-order-service2.modal-win(id="order-service2"  style="display: none" )
 		+form-wrap

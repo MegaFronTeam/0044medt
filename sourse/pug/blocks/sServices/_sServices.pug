@@ -16,45 +16,46 @@ mixin sServices(data)
 					+e.banner
 						+icon('coat-of-arms')
 						h4 Индивидуальная разработка стратегии развития и рыночного продвижения отечественных медицинских изделий
-			+e.all-services
-				h4 Выберите интересующие вас услуги
-				+b.filter-block
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary I. Клиническая база Взаимодействие с научно-медицинским сообществом
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary II. Консультационные услуги в сфере обращения медицинских изделий 
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary III. Маркетинговое исследование рынка и продвижение продукции на рынке
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary IV. Дистрибуция
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary V. Кадровые компетенции для предприятий
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary VI. Инвестиционная поддержка проектов диверсификации, импортозамещения и инноваций для предприятий оборонно-промышленного комплекса России
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary VII. Ведение каталога производимой продукции отечественными предприятиями-участниками АНО «Консорциум «Медицинская техника»
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary VIII. Импорт и экспорт в здравоохранении. Нормативно-правовое регулирование оборота медицинских изделий
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary IX. Федеральный центр компетенций в сфере производительности труда (ФЦК)
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary X. Профильные мероприятия и выставки
-					label
-						input.btn-check(type="checkbox", name="service")
-						span.btn.btn-outline-primary XI. Развитие кооперационных связей, субконтрактинга. Формирование промышленной политики через закупки
-				+e.wrap
-					+e.result
-						p Выбрано услуг: 2
-						a(href="#") Сбросить
-					+e.btn(href="#" data-src='order-service' data-fancybox="modal").btn.btn-danger Заказать
+					+doc-item('Презентация центра компетенций')
+			//- +e.all-services
+			//- 	h4 Выберите интересующие вас услуги
+			//- 	+b.filter-block
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary I. Клиническая база Взаимодействие с научно-медицинским сообществом
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary II. Консультационные услуги в сфере обращения медицинских изделий 
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary III. Маркетинговое исследование рынка и продвижение продукции на рынке
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary IV. Дистрибуция
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary V. Кадровые компетенции для предприятий
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary VI. Инвестиционная поддержка проектов диверсификации, импортозамещения и инноваций для предприятий оборонно-промышленного комплекса России
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary VII. Ведение каталога производимой продукции отечественными предприятиями-участниками АНО «Консорциум «Медицинская техника»
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary VIII. Импорт и экспорт в здравоохранении. Нормативно-правовое регулирование оборота медицинских изделий
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary IX. Федеральный центр компетенций в сфере производительности труда (ФЦК)
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary X. Профильные мероприятия и выставки
+			//- 		label
+			//- 			input.btn-check(type="checkbox", name="service")
+			//- 			span.btn.btn-outline-primary XI. Развитие кооперационных связей, субконтрактинга. Формирование промышленной политики через закупки
+			//- 	+e.wrap
+			//- 		+e.result
+			//- 			p Выбрано услуг: 2
+			//- 			a(href="#") Сбросить
+			//- 		+e.btn(href="#" data-src='order-service' data-fancybox="modal").btn.btn-danger Заказать
 	// end sServices

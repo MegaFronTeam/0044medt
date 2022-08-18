@@ -23,10 +23,10 @@
 
 	}
 	&__text-row {
-		margin-bottom: rem(25);
-		@include media-breakpoint-up(lg) {
-			margin-bottom: rem(50);
-		}
+		// margin-bottom: rem(15);
+		// @include media-breakpoint-up(lg) {
+		// 	margin-bottom: rem(30);
+		// }
 	}
 	&__banner {
 		padding: rem(16);
@@ -35,9 +35,11 @@
 		border-radius: 8px;
 		position: relative;
 		flex-direction: column;
+		margin-bottom: rem(19);
 		@include media-breakpoint-up(md) {
 			flex-direction: row;
 			padding: rem(32) rem(42) rem(40);
+			margin-bottom: rem(38);
 		}
 		&::before {
 			content: '';
@@ -113,6 +115,19 @@
 		--bs-btn-padding-y: 13.5px;
 		width: 100%;
 		max-width: rem(126);
+	}
+	&__text-wrap {
+		color: $gray-900;
+		@include media-breakpoint-up(lg) {
+			max-width: rem(561);
+		}
+		p {
+			line-height: 1.5em;
+			margin-bottom: rem(30);
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
