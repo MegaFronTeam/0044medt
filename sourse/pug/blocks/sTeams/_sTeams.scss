@@ -133,17 +133,17 @@
 			}
 			}
 
-			&:nth-child(6),
 			&:nth-child(7),
-			&:nth-child(8){
+			&:nth-child(8),
+			&:nth-child(9){
 				@include media-breakpoint-up(xl){
 					--c: 4;
 				}
 				--c: 6;
 			} 
-		&:nth-child(6),
 			&:nth-child(7),
-			&:nth-child(8){
+			&:nth-child(8),
+			&:nth-child(9){
 				
 			.team-item{
 				display: flex;
@@ -185,6 +185,11 @@
 		background: #F1F1F3;
 	}
 
+
+	h3{
+		color: #3F457A;
+		margin-top: rem(40);
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
