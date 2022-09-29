@@ -133,17 +133,13 @@
 			}
 			}
 
-			&:nth-child(7),
-			&:nth-child(8),
-			&:nth-child(9){
+			&:nth-child(n + 7){
 				@include media-breakpoint-up(xl){
 					--c: 4;
 				}
 				--c: 6;
 			} 
-			&:nth-child(7),
-			&:nth-child(8),
-			&:nth-child(9){
+			&:nth-child(n + 7){
 				
 			.team-item{
 				display: flex;
